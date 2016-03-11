@@ -1,0 +1,212 @@
+/*
+  Tick.tick-flip
+*/
+/* main */
+.MainCont{
+  width: 1175px;
+  height: 180px;
+  background: #3cb561;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  margin: 0 auto;
+}
+/* main */
+/* line 20, ../scss/tick.scss */
+.tick-flip + p {
+  clear: both;
+  text-align: right;
+}
+
+/* line 24, ../scss/tick.scss */
+.tick-flip {
+  position: relative;
+  float: left;
+  padding: 7px;
+  border-radius: 5px;
+  margin-bottom: 0.125em;
+  white-space: nowrap;
+  background-color: #3cb561;
+  *zoom: 1;
+
+  /* Fallback styles */
+  color: white;
+  width: 100%;
+  line-height: 1;
+  font-size: 4.75em;
+  font-family: "Myriad Pro", sans-serif;
+  text-align: center;
+}
+
+/* line 54, ../scss/tick.scss */
+.tick-flip.tick-active {
+  width: auto;
+  color: #fff;
+}
+
+/* line 58, ../scss/tick.scss */
+.tick-flip .tick-separator {
+  margin: 0 2px;
+  font-size: 0.6em;
+  color: #fff;
+}
+
+/* line 63, ../scss/tick.scss */
+.tick-flip .tick-wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 0 2px;
+  border-radius: 4px;
+}
+
+/* line 69, ../scss/tick.scss */
+.tick-flip .tick-wrapper:after {
+  position: absolute;
+  display: block;
+  top: 50%;
+  z-index: 998;
+  display: block;
+  height: 1px;
+  width: 100%;
+  content: '';
+  background-color: #3cb561;
+}
+
+/* line 81, ../scss/tick.scss */
+/* line 85, ../scss/tick.scss */
+.tick-flip .tick-old {
+  display: block;
+  border-radius: 4px;
+  background-color: #3cb561;
+  *zoom: 1;
+  color: rgba(255,255,255, 0.8);
+}
+
+/* line 95, ../scss/tick.scss */
+.tick-flip .tick-new {
+  overflow: hidden;
+  position: absolute;
+  z-index: 998;
+  top: 0;
+  display: block;
+  height: 50%;
+  background-color: #3cb561;
+  *zoom: 1;
+}
+
+/* line 112, ../scss/tick.scss */
+.tick-flip .tick-old-move,
+.tick-flip .tick-new-move {
+  overflow: hidden;
+  position: absolute;
+  display: none;
+  border-radius: 4px;
+  background: #3cb561;
+}
+
+/* line 120, ../scss/tick.scss */
+.tick-flip .tick-moving {
+  display: block;
+}
+
+/* line 124, ../scss/tick.scss */
+.tick-flip .tick-old-move {
+  z-index: 999;
+  bottom: 50%;
+  height: 50%;
+  background-color: #3cb561;
+  *zoom: 1;
+  -moz-transform-origin: bottom left;
+  -webkit-transform-origin: bottom left;
+  -o-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  transform-origin: bottom left;
+}
+
+/* line 138, ../scss/tick.scss */
+.tick-flip .tick-new-move {
+  z-index: 997;
+  height: 100%;
+  top: 0;
+  border-radius: 50px 50px 4px 4px;
+  background-color: #3cb561;
+  *zoom: 1;
+  -moz-transform-origin: top left;
+  -webkit-transform-origin: top left;
+  -o-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+}
+
+/*
+  Tick.tick-scroll
+*/
+/* line 159, ../scss/tick.scss */
+.tick-scroll {
+  overflow: hidden;
+  position: relative;
+  float: left;
+  padding: 0 10px;
+  height: 96px;
+  border: 1px solid #1e1e1e;
+  border-radius: 5px;
+  color: #1e1e1e;
+  line-height: 1;
+  font-size: 4em;
+  text-align: center;
+  background-color: #3c3c3c;
+}
+
+/*
+  Adding depth to the ticker by overlaying some gradients
+*/
+/* line 182, ../scss/tick.scss */
+.tick-scroll:before,
+.tick-scroll:after {
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 35%;
+  border-radius: 5px;
+}
+
+/* line 192, ../scss/tick.scss */
+.tick-scroll:before {
+  *zoom: 1;
+}
+
+/* line 196, ../scss/tick.scss */
+.tick-scroll:after {
+  bottom: 0;
+  *zoom: 1;
+}*/
+
+/*
+  +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+/* line 205, ../scss/tick.scss */
+.tick-scroll .tick-wheel {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  border-right: 1px solid #6e6e6e;
+  border-left: 1px solid #6e6e6e;
+  margin: 0 2px;
+  text-shadow: 0 -1px 0 black;
+  color: white;
+  background-color: #505050;
+}
+
+/* line 219, ../scss/tick.scss */
+.tick-scroll .tick-wheel span {
+  display: block;
+  padding: 16px 0;
+}
+
+/* line 224, ../scss/tick.scss */
+.tick-scroll .tick-separator {
+  font-weight: normal;
+}
